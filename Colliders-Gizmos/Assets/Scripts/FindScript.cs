@@ -10,7 +10,7 @@ public class FindScript : MonoBehaviour
 
         foreach (var script in scripts)
         {
-            Handles.Label(script.gameObject.transform.position + Vector3.up*2.5f, "Script Attached : "+script.GetType().Name);
+            Handles.Label(script.gameObject.transform.position + Vector3.up*2.75f, "Script Attached : "+script.GetType().Name);
         }
 
     }

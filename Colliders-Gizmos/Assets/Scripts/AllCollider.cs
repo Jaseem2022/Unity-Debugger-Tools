@@ -13,7 +13,7 @@ public class AllCollider : MonoBehaviour
         {
             CheckTrigger(collider);
             CheckColliderShape(collider);
-            Handles.Label(collider.transform.position + Vector3.up * 3f, "Tag : " + collider.tag);
+            Handles.Label(collider.transform.position + Vector3.up * 3f, "(Tag : " + collider.tag+")");
         }
 
     }
@@ -41,7 +41,7 @@ public class AllCollider : MonoBehaviour
     {
         if (collider.isTrigger)
         {
-            Handles.Label(collider.transform.position + Vector3.up * 2.5f, "Has IsTrigger");
+            Handles.Label(collider.transform.position + Vector3.up * 2.75f, "(IsTrigger)");
         }
     }
 
